@@ -29,7 +29,7 @@ namespace EntApp1
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello Bethany");
+                await context.Response.WriteAsync("Hello World from Bethany");
             });
         }
     }
