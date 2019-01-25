@@ -17,11 +17,15 @@
 
     @{ var weekDay = DateTime.Now.DayOfWeek;}
 
-    @{ var greetingMessage = myMessage + " Today it is " + weekDay;
+    @{ var weekTime = DateTime.Now.TimeOfDay;}
+
+    @{ var greetingMessage = myMessage + " Today it is " + weekDay + " and " + weekTime;
     }
+
+   
 
     <p>@greetingMessage</p>
 
-    
+
 </body>
 </html>
