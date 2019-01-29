@@ -1,0 +1,34 @@
+﻿@page
+@model EntApp1.Pages.ws1Model
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ws1</title>
+</head>
+<body>
+
+    @{
+        <ul>
+            @foreach (string country in Model.MyTestArray)
+            {
+                <li>@country</li>
+            }
+        </ul>
+
+        }
+
+    <form method="post">
+        <label for="firstname">Enter Your Name</label>
+        <input type="text" id="firstname" name="firstname" />
+        <button type="submit">Press Here</button>
+
+    </form>
+    <h1>@Model.Message</h1>
+</body>
+</html>

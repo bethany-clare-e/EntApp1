@@ -1,0 +1,39 @@
+﻿@page
+@model EntApp1.Pages.ws1bModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ws1b</title>
+</head>
+<body>
+
+    <form method="post">
+
+        <label for="number1">Enter two numbers</label>
+        <input type="number" id="number1" name="number1" />
+        <input type="number" id="number2" name="number2" />
+        <button type="submit">Press Here</button>
+        
+    </form>
+
+    
+
+    <h2>@Model.Message</h2>
+
+    <form method="post">
+        <input type="radio" name="calculation" value="add">Add<br />
+        <input type="radio" name="calculation" value="subtract">Subtract<br />
+        <input type="radio" name="calculation" value="divide">Divide<br />
+        <input type="radio" name="calculation" value="multiply">Multiply<br />
+        <input type="submit" value="submit" />
+    </form>
+
+
+</body>
+</html>
